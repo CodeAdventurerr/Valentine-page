@@ -16,14 +16,16 @@ const yesBtn=document.getElementById("yesBtn");
 let yesScale=1;
 
 function moveNo(){
-    const parent=document.querySelector(".buttons");
+    const parent = document.querySelector(".buttons");
     const maxX = parent.clientWidth - noBtn.offsetWidth;
     const maxY = parent.clientHeight - noBtn.offsetHeight;
 
-    noBtn.style.position = "absolute"; // temporarily switch to absolute
+    // switch to absolute for moving
+    noBtn.style.position = "absolute";
     noBtn.style.left = Math.random() * maxX + "px";
     noBtn.style.top = Math.random() * maxY + "px";
 
+    // scale Yes button
     yesScale += 0.2;
     yesBtn.style.transform = `scale(${yesScale})`;
 }
