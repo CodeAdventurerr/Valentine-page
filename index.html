@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be My Valentine</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="flowers" id="flowers"></div>
+
+<div class="card">
+
+<div id="questionArea">
+    <img class="top-gif" src="gavin-meme.gif">
+    <h1>Will you be my Valentine?</h1>
+
+    <div class="buttons">
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+</div>
+
+<!-- ================= PLANNER ================= -->
+
+<form 
+id="planner" 
+action="https://formspree.io/f/mlgnvyyj"
+method="POST">
+
+<h2>Plan Our Dream Date!</h2>
+
+<label>Choose a Date:</label>
+<input type="date" name="date" required>
+
+<h3>Date Spot</h3>
+
+<div class="options">
+    <div class="option-card" data-value="Cozy Cafe Date">
+        <img src="Bake.png">
+        <p>DIY Bakery( Sm North )</p>
+    </div>
+
+    <div class="option-card" data-value="Romantic Picnic">
+        <img src="Splat.png">
+        <p>Splat Room ( Sm North )</p>
+    </div>
+
+    <div class="option-card" data-value="Gourmet Dinner">
+        <img src="Pinto.png">
+        <p>Pinto Art Museum ( Antipolo )</p>
+    </div>
+</div>
+
+<input type="hidden" name="dateSpot" id="dateSpot">
+
+<label>
+Or, tell me exactly what you'd love to do:
+</label>
+
+<textarea name="customIdea"></textarea>
+
+<button class="sendBtn" type="submit">
+Send
+</button>
+
+</form>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
