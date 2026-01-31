@@ -69,7 +69,12 @@ h1{
 .buttons{
     position:relative;
     height:120px;
+    display:flex;
+    justify-content:center; /* center horizontally */
+    align-items:center;     /* center vertically */
+    gap:20px;               /* space between buttons */
 }
+
 
 button{
     padding:14px 30px;
@@ -83,16 +88,14 @@ button{
 #yesBtn{
     background:#ff4f81;
     color:white;
-    position: absolute;
-    left: 130px;
+    position:relative; /* remove absolute positioning */
+    transform: scale(1); /* initial scale */
 }
 
 #noBtn{
     background:#666;
     color:white;
-    position:absolute;
-    left: 250px;
-    top: 0px;
+    position:relative; /* remove absolute positioning */
 }
 
 /* ================= PLANNER ================= */
