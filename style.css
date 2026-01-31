@@ -7,10 +7,11 @@ body{
     margin:0;
     min-height:100vh;
     background:linear-gradient(135deg,#ffd1dc,#ffe6f0);
-    overflow:hidden;
+    overflow-x:hidden; /* allow vertical scroll */
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start; /* align top to allow scrolling */
+    padding:20px 0; /* optional: add padding so top card isn’t flush */
     text-align:center;
 }
 
@@ -47,6 +48,7 @@ body{
     width:90%;
     max-width:480px;
     box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    margin-bottom:20px; /* ensure scrolling space at bottom */
 }
 
 /* ================= HEADER ================= */
